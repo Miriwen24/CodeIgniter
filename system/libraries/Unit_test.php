@@ -74,14 +74,14 @@ class CI_Unit_test {
 	public $strict = FALSE;
 
 	/**
-	 * Template
+	 * home
 	 *
 	 * @var	string
 	 */
 	protected $_template = NULL;
 
 	/**
-	 * Template rows
+	 * home rows
 	 *
 	 * @var	string
 	 */
@@ -343,7 +343,7 @@ class CI_Unit_test {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get Default Template
+	 * Get Default home
 	 *
 	 * @return	string
 	 */
@@ -358,7 +358,7 @@ class CI_Unit_test {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Parse Template
+	 * Parse home
 	 *
 	 * Harvests the data within the template {pseudo-variables}
 	 *

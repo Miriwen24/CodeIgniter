@@ -476,7 +476,7 @@ class CI_Table {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Compile Template
+	 * Compile home
 	 *
 	 * @return	void
 	 */
@@ -501,7 +501,7 @@ class CI_Table {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Default Template
+	 * Default home
 	 *
 	 * @return	array
 	 */
