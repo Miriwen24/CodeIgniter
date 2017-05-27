@@ -1,14 +1,14 @@
-
+<IfModule mod_rewrite.c>
 RewriteEngine On
-
-# The base URL path
-# If your URL is www.example.com/, then use /
-# If your URL is www.example.com/site_folder/www, then use /site_folder/www/
 RewriteBase /CodeIgniter/
 
-# Do not enable rewriting for files or directories that exist
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
 
-# For requests that aren't actually files or directories, Rewrite to index.php/URL_PATH
-RewriteRule ^(.*)$ index.php/$1 [PT,L]
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
