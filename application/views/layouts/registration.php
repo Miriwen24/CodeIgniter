@@ -31,12 +31,9 @@
                     <li><a href="<?php echo base_url(); ?>projectss"> <i class="fa fa-user" aria-hidden="true"></i></a></li>
                     <li><a href="<?php echo base_url(); ?>projects"> <i class="fa fa-cab" aria-hidden="true"></i></a></li>
                     <li><a href=""> <i class="fa fa-road" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php echo base_url(); ?>projectsss"> <i class="fa fa-vcard" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php echo base_url(); ?>tasks"> <i class="fa fa-road" aria-hidden="true"></i></a></li>
-
                 <?php endif; ?>
                 <?php if(!$this->session->userdata('logged_in')): ?>
-                <li><a href="<?php echo base_url(); ?>users/register">Registrácia <span class="sr-only">(current)</span></a></li>
+                    <li><a href="<?php echo base_url(); ?>users/register">Registrácia <span class="sr-only">(current)</span></a></li>
                 <?php endif; ?>
                 <!--<li><a href="#">Link</a></li>
                 <!--<li class="dropdown">
@@ -59,10 +56,9 @@
                 <button type="submit" class="btn btn-default">Submit</button>
                 </form> -->
             <?php if($this->session->userdata('logged_in')): ?>
-
             <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="<?php echo base_url(); ?>users/logout"><span class="glyphicon glyphicon-log-out"> </span> </a></li>
+                <li><a href="<?php echo base_url(); ?>users/logout"><span class="glyphicon glyphicon-log-out"> </span> </a></li>
 
                 <?php endif; ?>
 
@@ -74,8 +70,8 @@
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>-->
-                    </ul>
-                </li>
+            </ul>
+            </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -84,10 +80,6 @@
 <div class="container">
 
     <div class="col-xs-3">
-
-
-        <?php $this->load->view('users/login_view'); ?>
-
 
 
     </div>

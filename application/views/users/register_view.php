@@ -1,6 +1,7 @@
 
     <h2>Registrácia</h2>
 
+
     <?php $attributes = array('ID' => 'register_form', 'class' => 'form_horizontal'); ?>
 
     <?php echo validation_errors("<p class='bg-danger'>"); ?>

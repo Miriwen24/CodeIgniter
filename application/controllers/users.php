@@ -70,7 +70,7 @@ class Users extends CI_Controller {
         if($this->form_validation->run() == FALSE) {
 
             $data['main_view'] = 'users/register_view';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/registration', $data);
 
         } else {
 

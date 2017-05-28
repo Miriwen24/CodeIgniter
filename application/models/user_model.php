@@ -79,12 +79,12 @@ class User_model extends CI_Model{
 
     }
 
-    public function login_user($meno, $heslo) {
+     public function login_user($meno, $heslo) {
 
-        $this->db->where('meno', $meno);
+     $this->db->where('meno', $meno);
         //$this->db->where('heslo', $heslo);
 
-        $result = $this->db->get('pouzivatelia');
+     $result = $this->db->get('pouzivatelia');
 
         $db_password = $result->row(2)->heslo;
 
