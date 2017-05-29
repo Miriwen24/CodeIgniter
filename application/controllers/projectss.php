@@ -14,7 +14,7 @@ class Projectss extends CI_Controller {
 
         if(!$this->session->userdata('logged_in')) {
 
-            $this->session->set_flashdata('no_access', 'Nemáte oprávnenie');
+            $this->session->set_flashdata('no_access', 'Nemáte oprávnenie !');
 
             redirect('home/index');
         }
@@ -25,7 +25,7 @@ class Projectss extends CI_Controller {
         $data['projectss'] = $this->projectt_model->get_projectss();
 
         $data['main_view'] = "projectss/indexx";
-        $this->load->view('layouts/main',$data);
+        $this->load->view('layouts/registration',$data);
 
     }
 
@@ -56,7 +56,7 @@ class Projectss extends CI_Controller {
 
             $data = array(
 
-                'projectt_user_id' => $this->session->userdata('user_id'),
+                //'projectt_user_id' => $this->session->userdata('user_id'),
                 'Meno' => $this->input->post('Meno'),
                 'Priezvisko' => $this->input->post('Priezvisko'),
                 'Bydlisko' => $this->input->post('Bydlisko'),
@@ -94,7 +94,7 @@ class Projectss extends CI_Controller {
 
             $data = array(
 
-                'projectt_user_id' => $this->session->userdata('user_id'),
+                //'projectt_user_id' => $this->session->userdata('user_id'),
                 'Meno' => $this->input->post('Meno'),
                 'Priezvisko' => $this->input->post('Priezvisko'),
                 'Bydlisko' => $this->input->post('Bydlisko'),

@@ -27,15 +27,15 @@ class Projecttt_model extends CI_Model {
 
     }
 
-    public  function get_all_projectsss($user_id) {
+    //public  function get_all_projectsss($user_id) {
 
-        $this->db->where('projecttt_user_id', $user_id);
-        $query = $this->db->get('detaily_zmeny');
+    //$this->db->where('projecttt_user_id', $user_id);
+    // $query = $this->db->get('detaily_zmeny');
 
-        return $query->result();
+    //return $query->result();
 
 
-    }
+    //}
 
     public function create_projecttt($data) {
 

@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="https://use.fontawesome.com/421c1aa365.js"></script>;
+    <script src="https://use.fontawesome.com/421c1aa365.js"></script>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
     <script src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse"  >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -26,13 +27,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="active"><a href="<?php echo base_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i> Domov</a></li>
                 <?php if($this->session->userdata('logged_in')): ?>
-                    <li><a href="<?php echo base_url(); ?>projectss"> <i class="fa fa-user" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php echo base_url(); ?>projects"> <i class="fa fa-cab" aria-hidden="true"></i></a></li>
-                    <li><a href=""> <i class="fa fa-road" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php echo base_url(); ?>projectsss"> <i class="fa fa-vcard" aria-hidden="true"></i></a></li>
-                    <li><a href="<?php echo base_url(); ?>tasks"> <i class="fa fa-road" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo base_url(); ?>projectss"> <i class="fa fa-user" aria-hidden="true"></i> Zamestnanci</a></li>
+                    <li><a href="<?php echo base_url(); ?>projects"> <i class="fa fa-cab" aria-hidden="true"></i> Autá</a></li>
+                    <li><a href="<?php echo base_url(); ?>taskss"> <i class="fa fa-road" aria-hidden="true"></i> Jazdy</a></li>
+                    <li><a href="<?php echo base_url(); ?>projectsss"> <i class="fa fa-info" aria-hidden="true"></i> Detaily pracovných zmien</a></li>
+                    <li><a href="<?php echo base_url(); ?>tasks"> <i class="fa fa-vcard" aria-hidden="true"></i> Pracovné zmeny</a></li>
 
                 <?php endif; ?>
                 <?php if(!$this->session->userdata('logged_in')): ?>
@@ -62,7 +63,7 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="<?php echo base_url(); ?>users/logout"><span class="glyphicon glyphicon-log-out"> </span> </a></li>
+                    <li><a href="<?php echo base_url(); ?>users/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Odhlásiť sa</a></li>
 
                 <?php endif; ?>
 
@@ -77,6 +78,7 @@
                     </ul>
                 </li>
             </ul>
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
@@ -100,7 +102,10 @@
     </div>
 
 
+
+
 </div>
 
 </body>
+
 </html>

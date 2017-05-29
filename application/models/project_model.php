@@ -71,5 +71,13 @@ class Project_model extends CI_Model {
 
     }
 
+//$this->db->select('*');
+//$this->db->from('Album a');
+//$this->db->join('Category b', 'b.cat_id=a.cat_id', 'left');
+//$this->db->join('Soundtrack c', 'c.album_id=a.album_id', 'left');
+//$this->db->where('c.album_id',$id);
+
+
+
 
 }

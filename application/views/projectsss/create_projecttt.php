@@ -39,7 +39,7 @@
 
         'class' => 'form-control',
         'name' => 'Od',
-        'placeholder' => 'Zadaj časový údaj od'
+        'type' => 'time'
 
     );
 
@@ -60,7 +60,7 @@
 
         'class' => 'form-control',
         'name' => 'Do',
-        'placeholder' => 'Zadaj časový údaj do'
+        'type' => 'time'
 
     );
 

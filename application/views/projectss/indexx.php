@@ -1,4 +1,4 @@
-<h1>Zamestnanci</h1>
+<h1>Zamestnanci <a class="btn btn-default pull-right" href="<?php echo base_url(); ?>projectss/create"><i class="fa fa-plus" aria-hidden="true"></i> Pridať zamestnanca</a></h1>
 
 <p class="bg-success">
 
@@ -16,10 +16,8 @@
 
 </p>
 
-<a class="btn btn-primary pull-right" href="<?php echo base_url(); ?>projectss/create">Pridať zamestnanca</a>
 <br>
-<br>
-<table class="table table-hover">
+<table class="table table-bordered">
     <thead>
     <tr>
         <th>

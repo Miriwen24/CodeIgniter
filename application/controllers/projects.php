@@ -14,7 +14,7 @@ class Projects extends CI_Controller {
 
         if(!$this->session->userdata('logged_in')) {
 
-            $this->session->set_flashdata('no_access', 'Nemáte oprávnenie');
+            $this->session->set_flashdata('no_access', 'Nemáte oprávnenie !');
 
             redirect('home/index');
         }
@@ -27,11 +27,14 @@ class Projects extends CI_Controller {
 
 
          $data['main_view'] = "projects/index";
-         $this->load->view('layouts/main', $data);
+         $this->load->view('layouts/registration', $data);
 
     }
 
     public function display($project_id) {
+
+
+        //$data['completed_tasks'] = $this->project_model->get_project_tasks($project_id);
 
         $data['project_data'] = $this->project_model->get_project($project_id);
 

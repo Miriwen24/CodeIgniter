@@ -2,10 +2,33 @@
 
     <h2>Pracovná zmena: <?php echo $project_data->Typ_zmeny; ?></h2>
     <!--<p>Dátum vytvorenia: <?php echo $project_data->datum; ?> </p>-->
-    <h3>Podrobnosti</h3>
-    <p><?php echo $project_data->Od; ?></p>
-    <p><?php echo $project_data->Do; ?></p>
-    <p><?php echo $project_data->Hodinova_mzda; ?></p>
+
+    <table class="table table-bordered">
+        <h3>Podrobnosti:</h3>
+        <thead>
+        <tr>
+            <td><b>Začiatok pracovnej zmeny: </b></td>
+            <td><?php echo $project_data->Od; ?></td>
+        </tr>
+
+        <tr>
+            <td><b>Koniec pracovnej zmeny: </b></td>
+            <td><?php echo $project_data->Do; ?></td>
+        </tr>
+
+        <tr>
+            <td><b>Hodinová mzda: </b></td>
+            <td><?php echo $project_data->Hodinova_mzda; ?> €</td>
+        </tr>
+
+
+
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 
 </div>
 
@@ -13,9 +36,9 @@
     <ul class="list-group">
         <h4> Project Actions </h4>
 
-        <li class="list-group-item"><a href="">Vytvoriť</a></li>
-        <li class="list-group-item"><a href="<?php echo base_url(); ?>projectsss/edit/<?php echo $project_data->ID; ?>"">Upraviť</a></li>
-        <li class="list-group-item"><a href="<?php echo base_url(); ?>projectsss/delete/<?php echo $project_data->ID; ?>">Vymazať</a></li>
+
+        <li class="list-group-item"><a href="<?php echo base_url(); ?>projectsss/edit/<?php echo $project_data->ID; ?>""><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Upraviť</a></li>
+        <li class="list-group-item"><a href="<?php echo base_url(); ?>projectsss/delete/<?php echo $project_data->ID; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i> Vymazať</a></li>
 
 
     </ul>

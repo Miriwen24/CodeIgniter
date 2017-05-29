@@ -1,4 +1,4 @@
-<h1>Pracovné zmeny</h1>
+<h1>Detaily pracovnej zmeny <a class="btn btn-default pull-right" href="<?php echo base_url(); ?>projectsss/create"> <i class="fa fa-plus" aria-hidden="true"></i> Pridať detail zmeny</a></h1>
 
 <p class="bg-success">
 
@@ -16,10 +16,9 @@
 
 </p>
 
-<a class="btn btn-primary pull-right" href="<?php echo base_url(); ?>projectsss/create">Pridať pracovnú zmenu</a>
+
 <br>
-<br>
-<table class="table table-hover">
+<table class="table table-bordered">
     <thead>
     <tr>
         <th>

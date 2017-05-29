@@ -1,4 +1,4 @@
-<h1>Autá</h1>
+<h1>Autá<a class="btn btn-default pull-right" href="<?php echo base_url(); ?>projects/create" ><i class="fa fa-plus" aria-hidden="true"></i> Pridať Auto</a></h1>
 
 <p class="bg-success">
 
@@ -17,12 +17,8 @@
 </p>
 
 
-
-<a class="btn btn-primary pull-right" href="<?php echo base_url(); ?>projects/create" >Pridať Auto</a>
 <br>
-<br>
-<br>
-<table class="table table-hover">
+<table class="table table-bordered">
 
     <thead>
     <tr>

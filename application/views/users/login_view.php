@@ -6,7 +6,7 @@
 
     <p>
     <?php if($this->session->userdata('meno')): ?>
-    <?php echo "Ste prihlásený ako " . $this->session->userdata('meno'); ?>
+    <?php echo "Ste prihlásený ako " . $this->session->userdata('meno') . "."; ?>
         <?php endif; ?>
         </p>
 

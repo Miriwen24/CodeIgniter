@@ -19,13 +19,11 @@
 
 </p>
 
-<div class="jumbotron">
+<!--<div class="jumbotron">
 
         <h1 class="text-center">Vitajte !</h1>
 
-
-
-</div>
+</div>-->
 
 <?php if(isset($projects)): ?>
 

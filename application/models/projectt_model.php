@@ -27,15 +27,15 @@ class Projectt_model extends CI_Model {
 
     }
 
-    public  function get_all_projectss($user_id) {
+    //public  function get_all_projectss($user_id) {
 
-        $this->db->where('projectt_user_id', $user_id);
-        $query = $this->db->get('zamestnanec');
+    // $this->db->where('projectt_user_id', $user_id);
+    // $query = $this->db->get('zamestnanec');
 
-        return $query->result();
+    //  return $query->result();
 
 
-    }
+    // }
 
     public function create_projectt($data) {
 
