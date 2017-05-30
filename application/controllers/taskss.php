@@ -36,7 +36,7 @@ class Taskss extends CI_Controller {
         $data['project_data'] = $this->taskk_model->get_taskk($project_id);
 
         $data['main_view'] = "taskss/display";
-        $this->load->view('layouts/main', $data);
+        $this->load->view('layouts/alt', $data);
 
 
 
@@ -57,7 +57,7 @@ class Taskss extends CI_Controller {
 
             $data['Pracovna_zmena_ID'] = $this->taskk_model->get_pracovna_zmena_ID();
             $data['main_view'] = 'taskss/create_taskk';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 
@@ -99,7 +99,7 @@ class Taskss extends CI_Controller {
             $data['project_data'] = $this->taskk_model->get_taskss_info($project_id);
 
             $data['main_view'] = 'taskss/edit_taskk';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 

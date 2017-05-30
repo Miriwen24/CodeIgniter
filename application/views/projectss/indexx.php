@@ -10,7 +10,7 @@
         <?php echo $this->session->flashdata('projectt_updated'); ?>
     <?php endif; ?>
 
-    <?php if($this->session->flashdata('projectt_delete')): ?>
+    <?php if($this->session->flashdata('projectt_deleted')): ?>
         <?php echo $this->session->flashdata('projectt_deleted'); ?>
     <?php endif; ?>
 

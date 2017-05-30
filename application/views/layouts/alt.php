@@ -37,7 +37,7 @@
 
                 <?php endif; ?>
                 <?php if(!$this->session->userdata('logged_in')): ?>
-                <li><a href="<?php echo base_url(); ?>users/register">Registrácia <span class="sr-only">(current)</span></a></li>
+                    <li><a href="<?php echo base_url(); ?>users/register">Registrácia <span class="sr-only">(current)</span></a></li>
                 <?php endif; ?>
                 <!--<li><a href="#">Link</a></li>
                 <!--<li class="dropdown">
@@ -63,7 +63,8 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="<?php echo base_url(); ?>users/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Odhlásiť sa</a></li>
+                <li><a href="<?php echo base_url(); ?>users/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Odhlásiť sa</a></li>
+
 
                 <?php endif; ?>
 
@@ -75,8 +76,8 @@
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>-->
-                    </ul>
-                </li>
+            </ul>
+            </li>
             </ul>
 
         </div><!-- /.navbar-collapse -->
@@ -85,16 +86,16 @@
 
 <div class="container-fluid">
 
-    <div class="col-xs-3">
+    <div class="col-xs-2">
 
 
-        <?php $this->load->view('users/login_view'); ?>
+
 
 
 
     </div>
 
-    <div class="col-xs-9">
+    <div class="col-xs-10">
 
         <?php $this->load->view($main_view); ?>
 
@@ -106,6 +107,11 @@
 
 </div>
 
-</body>
 
+
+
+
+</body>
 </html>
+
+

@@ -115,7 +115,7 @@
 
 <div class="form-group">
 
-    <?php echo form_label('Pracovna zmena ID:'); ?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('Pracovna zmena ID:'); ?>
 
     <select class="form-control" name="Pracovna_zmena_ID">
         <?php foreach($Pracovna_zmena_ID as $row): ?>
@@ -140,7 +140,7 @@
 
         $data = array(
 
-            'class' => 'btn btn-primary',
+            'class' => 'btn btn-primary pull-right',
             'name' => 'submit',
             'value' => 'Upraviť'
 
@@ -151,6 +151,8 @@
         <?php echo form_submit($data); ?>
 
     </div>
+
+<a class="btn btn-default pull-left" href="javascript:history.back(1)"><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
 
     <?php echo form_close(); ?>
 

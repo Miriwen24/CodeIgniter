@@ -99,7 +99,7 @@
 
     $data = array(
 
-        'class' => 'btn btn-primary',
+        'class' => 'btn btn-primary pull-right',
         'name' => 'submit',
         'value' => 'Upraviť'
 
@@ -110,6 +110,9 @@
     <?php echo form_submit($data); ?>
 
 </div>
+
+<a class="btn btn-default pull-left" href="javascript:history.back(1)"><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
+
 
 <?php echo form_close(); ?>
 

@@ -34,7 +34,7 @@ class Projectsss extends CI_Controller {
         $data['project_data'] = $this->projecttt_model->get_projecttt($projecttt_id);
 
         $data['main_view'] = "projectsss/displayyy";
-        $this->load->view('layouts/main',$data);
+        $this->load->view('layouts/alt',$data);
 
     }
 
@@ -50,7 +50,7 @@ class Projectsss extends CI_Controller {
         if($this->form_validation->run() == FALSE) {
 
             $data['main_view'] = 'projectsss/create_projecttt';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 
@@ -88,7 +88,7 @@ class Projectsss extends CI_Controller {
             $data['project_data'] = $this->projecttt_model->get_projectsss_info($project_id);
 
             $data['main_view'] = 'projectsss/edit_projecttt';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 

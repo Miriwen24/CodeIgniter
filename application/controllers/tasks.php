@@ -36,7 +36,7 @@ class Tasks extends CI_Controller {
         $data['project_data'] = $this->task_model->get_task($project_id);
 
         $data['main_view'] = "tasks/display";
-        $this->load->view('layouts/main', $data);
+        $this->load->view('layouts/alt', $data);
 
 
 
@@ -57,7 +57,7 @@ class Tasks extends CI_Controller {
             $data['Auto_ID'] = $this->task_model->get_auto_ID();
 
             $data['main_view'] = 'tasks/create_task';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 
@@ -95,7 +95,7 @@ class Tasks extends CI_Controller {
             $data['project_data'] = $this->task_model->get_tasks_info($project_id);
 
             $data['main_view'] = 'tasks/edit_task';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 

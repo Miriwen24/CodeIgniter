@@ -114,7 +114,7 @@
 </div>
 
 <div class="form-group">
-    <?php echo form_label('ID pracovnej zmeny:'); ?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID pracovnej zmeny:'); ?>
 
     <select class="form-control" name="Pracovna_zmena_ID">
         <?php
@@ -132,7 +132,7 @@
 
     $data = array(
 
-        'class' => 'btn btn-primary',
+        'class' => 'btn btn-primary pull-right',
         'name' => 'submit',
         'value' => 'Pridať'
 
@@ -143,6 +143,7 @@
     <?php echo form_submit($data); ?>
 
 </div>
+<a class="btn btn-default pull-left" href="<?php echo base_url(); ?>taskss" ><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
 
 <?php echo form_close(); ?>
 

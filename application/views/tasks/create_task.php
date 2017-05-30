@@ -9,7 +9,7 @@
 
 
 <div class="form-group">
-    <?php echo form_label('ID zamestnanca:'); ?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID zamestnanca:'); ?>
 
     <select class="form-control" name="Zamestnanec_ID">
         <?php
@@ -22,7 +22,7 @@
 </div>
 
 <div class="form-group">
-    <?php echo form_label('ID detailov pracovnej zmeny:'); ?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID detailov pracovnej zmeny:'); ?>
 
     <select class="form-control" name="Detaily_zmeny_ID">
         <?php
@@ -35,7 +35,7 @@
 </div>
 
 <div class="form-group">
-    <?php echo form_label('ID auta:'); ?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID auta:'); ?>
 
     <select class="form-control" name="Auto_ID">
         <?php
@@ -53,7 +53,7 @@
 
     $data = array(
 
-        'class' => 'btn btn-primary',
+        'class' => 'btn btn-primary pull-right',
         'name' => 'submit',
         'value' => 'Pridať'
 
@@ -64,6 +64,7 @@
     <?php echo form_submit($data); ?>
 
 </div>
+<a class="btn btn-default pull-left" href="<?php echo base_url(); ?>tasks" ><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
 
 <?php echo form_close(); ?>
 

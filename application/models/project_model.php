@@ -25,15 +25,15 @@ class Project_model extends CI_Model {
 
     }
 
-    public  function get_all_projects($user_id) {
+    //public  function get_all_projects($user_id) {
 
-        $this->db->where('project_user_id', $user_id);
-        $query = $this->db->get('auto');
+    //$this->db->where('project_user_id', $user_id);
+    //$query = $this->db->get('auto');
 
-        return $query->result();
+    //return $query->result();
 
 
-    }
+    //}
 
     public function create_project($data) {
 
@@ -76,8 +76,5 @@ class Project_model extends CI_Model {
 //$this->db->join('Category b', 'b.cat_id=a.cat_id', 'left');
 //$this->db->join('Soundtrack c', 'c.album_id=a.album_id', 'left');
 //$this->db->where('c.album_id',$id);
-
-
-
 
 }

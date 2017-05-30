@@ -10,7 +10,7 @@
         <?php echo $this->session->flashdata('task_updated'); ?>
     <?php endif; ?>
 
-    <?php if($this->session->flashdata('task_delete')): ?>
+    <?php if($this->session->flashdata('task_deleted')): ?>
         <?php echo $this->session->flashdata('task_deleted'); ?>
     <?php endif; ?>
 
@@ -25,13 +25,13 @@
             #
         </th>
         <th>
-            ID zamestnanca
+            ID zamestnanca <i class="fa fa-key" aria-hidden="true"></i>
         </th>
         <th>
-            ID detailov zmien
+            ID detailov zmien <i class="fa fa-key" aria-hidden="true"></i>
         </th>
         <th>
-            ID auta
+            ID auta <i class="fa fa-key" aria-hidden="true"></i>
         </th>
 
     </tr>

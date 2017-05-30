@@ -39,7 +39,7 @@ class Projects extends CI_Controller {
         $data['project_data'] = $this->project_model->get_project($project_id);
 
         $data['main_view'] = "projects/display";
-        $this->load->view('layouts/main', $data);
+        $this->load->view('layouts/alt', $data);
 
 
 
@@ -57,13 +57,13 @@ class Projects extends CI_Controller {
         if($this->form_validation->run() == FALSE) {
 
             $data['main_view'] = 'projects/create_project';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 
             $data = array(
 
-                'project_user_id' => $this->session->userdata('user_id'),
+                //'project_user_id' => $this->session->userdata('user_id'),
                 'Znacka' => $this->input->post('Znacka'),
                 'Model' => $this->input->post('Model'),
                 'Rok_vyroby' => $this->input->post('Rok_vyroby'),
@@ -95,13 +95,13 @@ class Projects extends CI_Controller {
             $data['project_data'] = $this->project_model->get_projects_info($project_id);
 
             $data['main_view'] = 'projects/edit_project';
-            $this->load->view('layouts/main', $data);
+            $this->load->view('layouts/niam', $data);
 
         } else {
 
             $data = array(
 
-                'project_user_id' => $this->session->userdata('user_id'),
+                //'project_user_id' => $this->session->userdata('user_id'),
                 'Znacka' => $this->input->post('Znacka'),
                 'Model' => $this->input->post('Model'),
                 'Rok_vyroby' => $this->input->post('Rok_vyroby'),

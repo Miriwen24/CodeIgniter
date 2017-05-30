@@ -11,7 +11,7 @@
 
 <div class="form-group">
 
-    <?php echo form_label('ID zamestnanca');?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID zamestnanca');?>
 
     <select class="form-control" name="Zamestnanec_ID">
         <?php foreach($Zamestnanec_ID as $row): ?>
@@ -32,7 +32,7 @@
 
 <div class="form-group">
 
-    <?php echo form_label('ID detailov zmien');?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID detailov zmien');?>
 
     <select class="form-control" name="Detaily_zmeny_ID">
         <?php foreach($Detaily_zmeny_ID as $row): ?>
@@ -51,7 +51,7 @@
 
 <div class="form-group">
 
-    <?php echo form_label('ID auta');?>
+    <i class="fa fa-key" aria-hidden="true"></i> <?php echo form_label('ID auta');?>
 
     <select class="form-control" name="Auto_ID">
         <?php foreach($Auto_ID as $row): ?>
@@ -76,7 +76,7 @@
 
     $data = array(
 
-        'class' => 'btn btn-primary',
+        'class' => 'btn btn-primary pull-right',
         'name' => 'submit',
         'value' => 'Upraviť'
 
@@ -87,6 +87,9 @@
     <?php echo form_submit($data); ?>
 
 </div>
+
+<a class="btn btn-default pull-left" href="javascript:history.back(1)"><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
+
 
 <?php echo form_close(); ?>
 

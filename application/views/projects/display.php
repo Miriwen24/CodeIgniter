@@ -2,7 +2,6 @@
 
 
     <h1>Značka vozidla: <?php echo $project_data->Znacka; ?></h1>
-    <p>Dátum vytvorenia: <?php echo $project_data->datum; ?> </p>
 
     <table class="table table-bordered">
         <h3>Podrobnosti:</h3>
@@ -35,6 +34,7 @@
         </tbody>
     </table>
 
+    <a class="btn btn-default pull-left" href="<?php echo base_url(); ?>projects" ><i class="fa fa-arrow-left" aria-hidden="true"></i> Späť</a>
 
 </div>
 
@@ -42,7 +42,7 @@
 
 <div class="col-xs-3 pull-right">
 <ul class="list-group">
-    <h4> Project Actions </h4>
+    <h4> <i class="fa fa-cogs" aria-hidden="true"></i> </h4>
 
     <!--<li class="list-group-item"><a href="<?php //echo base_url(); ?>tasks/create/<?php //echo $project_data->ID; ?>">Vytvoriť</a></li>-->
     <li class="list-group-item"><a href="<?php echo base_url(); ?>projects/edit/<?php echo $project_data->ID; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Upraviť</a></li>

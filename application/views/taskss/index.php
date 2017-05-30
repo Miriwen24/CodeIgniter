@@ -10,7 +10,7 @@
         <?php echo $this->session->flashdata('taskk_updated'); ?>
     <?php endif; ?>
 
-    <?php if($this->session->flashdata('taskk_delete')): ?>
+    <?php if($this->session->flashdata('taskk_deleted')): ?>
         <?php echo $this->session->flashdata('taskk_deleted'); ?>
     <?php endif; ?>
 
@@ -40,7 +40,7 @@
             Cena
         </th>
         <th>
-            ID pracovnej zmeny
+            ID pracovnej zmeny  <i class="fa fa-key" aria-hidden="true"></i>
         </th>
     </tr>
     </thead>

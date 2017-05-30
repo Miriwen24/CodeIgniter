@@ -122,7 +122,7 @@ class Users extends CI_Controller {
                 );
 
                 $this->session->set_userdata($user_data);
-                $this->session->set_flashdata('login_success', 'Ste prihlásený');
+                $this->session->set_flashdata('login_success', 'Ste prihlásený.');
 
                 //$data['main_view'] = "admin_view";
 
@@ -132,7 +132,7 @@ class Users extends CI_Controller {
 
             } else {
 
-                $this->session->set_flashdata('login_failed', 'Nie ste prihláseny');
+                $this->session->set_flashdata('login_failed', 'Nie ste prihlásený.');
                 redirect('home/index');
             }
 
